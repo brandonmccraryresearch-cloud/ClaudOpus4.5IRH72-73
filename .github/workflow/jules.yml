@@ -1,0 +1,26 @@
+name: Jules AI Coding Agent
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch: # This is your manual "Start" button
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  jules-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Jules Agent
+        uses: google-labs-code/jules-action@v1
+        with:
+          prompt: |
+            Review this PR and address all existing review comments and any bugs found. 
+            For every change you propose:
+            1. Use the 'GitHub Suggested Change' format (triple-backtick suggestion syntax).
+            2. Ensure the suggestions are actionable so I can click the 'Commit suggestion' button.
+            3. Provide a brief, clear explanation for why each change is being made.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
