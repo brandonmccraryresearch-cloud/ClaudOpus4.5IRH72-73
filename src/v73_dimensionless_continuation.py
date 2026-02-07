@@ -1055,7 +1055,7 @@ class GeometricIdentities:
 
             ("m_t/v",
              1 / np.sqrt(2),
-             172.69 / 246.22,
+             MT_OVER_MP / V_OVER_MP,
              "1/√2 (Yukawa saturation)"),
         ]
 
