@@ -40,6 +40,13 @@ import warnings
 # Import core lattice module
 from d4_lattice_core import D4Lattice, LatticeHamiltonian, generate_d4_root_vectors
 
+# =============================================================================
+# CONSTANTS & PARAMETERS
+# =============================================================================
+
+MOMENTUM_CONSERVATION_WIDTH = 0.1
+PLANCK_CORRECTION_COEFFICIENT = 0.1
+
 
 # =============================================================================
 # SECTION 1: LATTICE GREEN'S FUNCTION
@@ -357,7 +364,7 @@ class SMatrix:
         # Planck-scale corrections from lattice anisotropy
         # These enter at order (√s / E_P)^6 due to 5-design property
         E_P = 1.0  # Planck energy in Planck units
-        lattice_correction = 1.0 + 0.1 * (np.sqrt(s) / E_P)**6
+        lattice_correction = 1.0 + PLANCK_CORRECTION_COEFFICIENT * (np.sqrt(s) / E_P)**6
 
         return sigma_0 * lattice_correction
 
@@ -510,7 +517,7 @@ class EffectiveAmplitudes:
         E_typical = np.sqrt(abs(s)) / 2
 
         # Corrections from lattice discreteness
-        delta_M = 0.1 * (E_typical / E_P)**6  # From 5-design
+        delta_M = PLANCK_CORRECTION_COEFFICIENT * (E_typical / E_P)**6  # From 5-design
 
         M_lattice = M_qft * (1 + delta_M)
 
@@ -560,7 +567,7 @@ class EffectiveAmplitudes:
             'M_tree': M_gravity,
             'lattice_correction_order': 6,
             'correction_magnitude': correction,
-            'effective_amplitude': M_gravity * (1 + 0.1 * correction),
+            'effective_amplitude': M_gravity * (1 + PLANCK_CORRECTION_COEFFICIENT * correction),
             'lorentz_violation_parameter': correction  # ξ₆ ~ 1
         }
 
@@ -695,7 +702,7 @@ class PlanckScalePhysics:
 
         # Modified threshold from LIV
         # ξ₆ correction shifts the kinematics
-        xi_6 = 0.1  # Order-unity coefficient
+        xi_6 = PLANCK_CORRECTION_COEFFICIENT  # Order-unity coefficient
 
         delta_threshold = xi_6 * (E_proton / E_P)**6
 
@@ -724,7 +731,7 @@ class PlanckScalePhysics:
         E_P = 1.0
 
         # The refractive index difference scales as (ω/E_P)⁶
-        delta_n = 0.1 * (omega / E_P)**6
+        delta_n = PLANCK_CORRECTION_COEFFICIENT * (omega / E_P)**6
 
         # Phase difference over propagation distance L
         # Δφ = ω L δn
