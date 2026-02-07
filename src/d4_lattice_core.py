@@ -448,9 +448,15 @@ class LatticeEvolution:
             if np.linalg.norm(k0) > 0:
                 k_hat = k0 / np.linalg.norm(k0)
                 # Choose arbitrary transverse direction
-                perp = np.array([1, 0, 0, 0]) - k_hat[0] * k_hat
-                if np.linalg.norm(perp) < 0.1:
-                    perp = np.array([0, 1, 0, 0]) - k_hat[1] * k_hat
+                # A more robust way to find a perpendicular vector.
+                # Start with an arbitrary vector not parallel to k_hat.
+                if abs(k_hat[0]) < 0.9:
+                    v_arb = np.array([1.0, 0.0, 0.0, 0.0])
+                else:
+                    v_arb = np.array([0.0, 1.0, 0.0, 0.0])
+                
+                # Use Gram-Schmidt to find the orthogonal component.
+                perp = v_arb - np.dot(v_arb, k_hat) * k_hat
                 perp /= np.linalg.norm(perp)
             else:
                 perp = np.array([1, 0, 0, 0])
