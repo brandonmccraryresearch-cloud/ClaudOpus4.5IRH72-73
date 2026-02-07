@@ -618,7 +618,7 @@ class LorentzInvarianceTest:
 # SECTION 5: VISUALIZATION AND REPORTING
 # =============================================================================
 
-def generate_verification_report(output_dir: str = '/home/claude/IRH_simulations'):
+def generate_verification_report(output_dir: str = 'results'):
     """
     Generate comprehensive verification report with plots.
 
