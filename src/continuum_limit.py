@@ -483,7 +483,7 @@ class BridgeMetricVerification:
             'h_amplitude': h_amplitude,
             'max_metric_error': error,
             'theoretical_bound': error_bound,
-            'within_bound': error <= error_bound * 10,  # Factor of 10 margin
+            'within_bound': error <= error_bound,  # Factor of 10 margin removed
             'curvature': R_max
         }
 
