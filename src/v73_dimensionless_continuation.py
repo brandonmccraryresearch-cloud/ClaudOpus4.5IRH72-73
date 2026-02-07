@@ -25,7 +25,7 @@ Version: 73.1 (continuation)
 
 import numpy as np
 from scipy.linalg import eigvalsh
-from scipy import optimize, integrate
+from scipy import optimize, Fraction
 from fractions import Fraction
 import warnings
 warnings.filterwarnings('ignore')
