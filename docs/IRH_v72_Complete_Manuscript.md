@@ -677,7 +677,7 @@ for n, name in enumerate(["electron", "muon", "tau"]):
 
 # Higgs VEV
 E_P = 1.2209e19
-v = E_P * (1/137.036)**9 * math.pi**5 * (9/8)
+v = E_P * (1/alpha_inv)**9 * math.pi**5 * (9/8)
 print(f"v = {v:.2f} GeV")  # 246.64
 ```
 
