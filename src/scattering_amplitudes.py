@@ -327,7 +327,7 @@ class SMatrix:
             M_u = 0
 
         # Momentum conservation factor
-        conservation_factor = np.exp(-momentum_mismatch**2 / 0.1)
+        conservation_factor = np.exp(-momentum_mismatch**2 / MOMENTUM_CONSERVATION_WIDTH)
 
         return (M_s + M_t + M_u) * conservation_factor
 
