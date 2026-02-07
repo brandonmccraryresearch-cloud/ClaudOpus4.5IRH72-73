@@ -36,7 +36,6 @@ import time
 
 # Import core modules
 import sys
-sys.path.insert(0, '/home/claude/IRH_simulations')
 from d4_lattice_core import (
     D4Lattice, LatticeHamiltonian, LatticeEvolution,
     generate_d4_root_vectors, verify_spherical_5_design
