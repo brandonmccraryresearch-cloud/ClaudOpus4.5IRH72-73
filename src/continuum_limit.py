@@ -304,7 +304,7 @@ def convergence_analysis(sizes: List[int] = [6, 8, 10, 12, 14]) -> Dict:
                            p0=[1.0, -6.0],
                            maxfev=10000)
         results['isotropy_scaling_exponent'] = popt[1]
-    except:
+    except RuntimeError:
         results['isotropy_scaling_exponent'] = None
 
     return results
