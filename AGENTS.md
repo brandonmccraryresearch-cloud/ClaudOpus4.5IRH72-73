@@ -123,7 +123,7 @@ Dimensional & Topological Consistency:
 
 Requirement: Explicitly derive the dimensionality (N) and topology of the fundamental substrate.
 
-Constraint: The choice must be derived from necessity not convince or ad hoc elements.
+Constraint: The choice must be derived from necessity not convenience or ad hoc elements.
 
 Consequence: The user must accept all downstream implications (e.g., if the bulk is holographic, entropy bounds must apply; if high-dimensional, compactification mechanisms must be explicit).
 
