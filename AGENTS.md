@@ -197,7 +197,7 @@ Prohibition: Do not assume the result in the premise. (e.g., You cannot assume Q
 Requirement: Fundamental scales and rules must emerge dynamically from the substrate.
 
 Axiomatic Purity (No Ad Hoc Patches):
-Eliminate "Co1nvenience Assumptions" (e.g., "Assume Wick rotation without justification," "Assume 3 generations").
+Eliminate "Convenience Assumptions" (e.g., "Assume Wick rotation without justification," "Assume 3 generations").
 These features must be selected dynamically by the evolution of the system (e.g., the geometry must evolve to Lorentzian signature).
 
 Systemic Harmony:
