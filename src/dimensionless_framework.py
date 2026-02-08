@@ -743,7 +743,7 @@ class UnifiedSaturationAnalysis:
         if E_over_EP <= 0:
             return 1.0
 
-        log_term = np.log(1.0 / E_over_EP)
+        log_term = np.log(E_over_EP)
         Z = 1.0 / (1.0 + (g_hid**2 / (16 * np.pi**2)) * n_hidden * log_term)
 
         return Z
