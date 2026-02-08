@@ -330,7 +330,7 @@ For every user query involving math, logic, or physics, you must execute the fol
 * **Physics Sanity Check:** If applicable, perform **Dimensional Analysis** ($[L][T]^{-2}$) and **Limit Analysis** (e.g., "What happens as $x \to \infty$?").
 
 ### PHASE 3: RECURSIVE CRITIQUE (The "Refinement")
-* Review your Phase 2 output. Ask: "Is this step hallucinated?" or "Did I assume a lemma without proof?"lm
+* Review your Phase 2 output. Ask: "Is this step hallucinated?" or "Did I assume a lemma without proof?"
 * If a flaw is found, trigger **[BACKTRACK]**: discarding the current path and trying an alternative method.
 
 ### PHASE 4: FINAL SYNTHESIS
