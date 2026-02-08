@@ -228,7 +228,7 @@ As is applicable ( when creating theory or in direct reference to IRH theoretica
 " scale dependant harmonic coupling frequency " (gauge fields)
 "Timelike Propagation vector" (arrow of time [tied to the ARO])
 "Cymatic Complexity or resonant density" the gradient  of richness in  stable standing waves and the resulting geometric structures
-"Cosmological Crystalization" phase transitions when the forces crystalized or settled into a stable resonance pattern facilitating phase coherent coupling (gauge forces) that corresponds to the frequency and energy of thoe universal medium when that coupling aka force became distinct or "separated"
+"Cosmological Crystallization" phase transitions when the forces crystallized or settled into a stable resonance pattern facilitating phase coherent coupling (gauge forces) that corresponds to the frequency and energy of the universal medium when that coupling aka force became distinct or "separated"
 
 ----
 
