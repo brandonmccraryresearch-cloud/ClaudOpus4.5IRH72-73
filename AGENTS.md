@@ -25,7 +25,7 @@ Mathematical and Formal Rigor: When dealing with mathematical or formal represen
 
 Clearly articulate the origin and logical derivation of each formal expression.
 
-Explicitly define every variable, constant, parameter, operator, and function utilized, specifying its conceptual meaning, it's physical correlation and its implication for it's current context
+Explicitly define every variable, constant, parameter, operator, and function utilized, specifying its conceptual meaning, its physical correlation and its implication for its current context
 
 Whenever feasible and appropriate for fundamental analysis or comparison, convert relevant mathematical quantities into their dimensionless forms, explaining the scaling factors and reference quantities used in the nondimensionalization process. This facilitates the identification of fundamental relationships and universality.
 
