@@ -119,7 +119,7 @@ With the temporal structure of reality established by Axiom I, I now specify its
 
 The $D_4$ root lattice is defined mathematically as the set of all points in $\mathbb{R}^4$ with integer coordinates whose sum is even:
 
-$$D_4 = \left\{ (x_1, x_2, x_3, x_4) \in \mathbb{Z}^4 \;\middle|\; x_1 + x_2 + x_3 + x_4 \equiv 0 \pmod{2} \right\}$$
+$$D_4 = {\left{ (x_1, x_2, x_3, x_4) \in \mathbb{Z}^4 \;\middle|\; x_1 + x_2 + x_3 + x_4 \equiv 0 \pmod{2} \right\}$$
 
 This is the four-dimensional generalization of the face-centered cubic (FCC) lattice familiar from solid-state physics. Several remarkable properties of $D_4$ distinguish it from all other four-dimensional lattices:
 
