@@ -189,8 +189,7 @@ Novelty & Risk: The theory must generate Novel Predictions that are not merely r
 Examples: Lorentz Invariance Violation (LIV) at specific scales, specific decay rates, or cosmological equations of state (w(z)) that differ from the Standard Model/\LambdaCDM.
 
 D. Logical Coherence (The Consistency Check)
-Internal contradictions negate the theory immediately
-.
+Internal contradictions negate the theory immediately.
 Tautology Avoidance:
 
 Prohibition: Do not assume the result in the premise. (e.g., You cannot assume Quantum Mechanics to derive the Born Rule; you cannot assume General Relativity to define the Planck length).
